@@ -1,0 +1,18 @@
+<div class="container">
+<div class="card_container ">
+  <div *ngFor = "let movie of arrayOfMovies" class="card" style="width: 18rem;">
+    <img src="{{movie.resto_image}}"class="card-img-top" alt="...">
+    <div class="card-body">
+    <h5 class="card-title">{{movie.resto_name}}</h5>
+    <h5 class="card-title">{{movie.resto_add}}</h5>
+    <div class="row">
+       
+        <button (click)="viewData(movie.resto_name.res_id)" class="btn btn-outline-success col-md-4">Details</button>
+      
+      <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+      <button href="#" (click)="delete(movie.id)" class="btn btn-outline-danger  col-md-4"> Remove </button>
+    </div>
+  </div>
+
+</div>
+</div>

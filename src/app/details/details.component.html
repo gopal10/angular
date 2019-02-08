@@ -1,0 +1,30 @@
+
+<div class="row">
+    <div class="col-md-6">
+      
+           <img src="{{fooddata.featured_image}}" width="100%" height="100%" alt="...">
+    </div>
+           <div class="col-md-6">
+             <label for="">Name</label>
+           <p class="">{{fooddata.name}}</p>
+           <label for="">Cusines</label>
+            <p class="">{{fooddata.cuisines}}</p>
+            <label for="">Currency We Follow</label>
+            <p class="">{{fooddata.currency}}</p>
+
+
+            <label for="">Average Cost For Two People</label>
+            <p class="">{{fooddata.average_cost_for_two}}</p>
+
+            <label for="">Address</label>
+            <p class="">{{fooddata.location.address}}</p>
+
+
+         </div>
+         <div class="container mt-5">
+            <button (click)="add(fooddata.restaurant)" class="btn btn-outline-success col-md-4">Add To favourite</button>
+         </div>
+       </div>
+    
+  
+  

@@ -1,0 +1,23 @@
+{
+  "posts": [
+    {
+      "resto_name": "Koramangala Social",
+      "resto_image": "https://b.zmtcdn.com/data/pictures/chains/8/57438/4085b4d8e5f43abf2c90ad971c156b79.jpg?output-format=webp",
+      "id": 4
+    },
+    {
+      "resto_name": "ECHOES Koramangala",
+      "resto_image": "https://b.zmtcdn.com/data/pictures/chains/4/18439634/0344b0514699e47c942acb0873ee3fdb.jpg",
+      "id": 5
+    },
+    {
+      "resto_name": "Twinkles",
+      "resto_image": "",
+      "id": 6
+    }
+  ],
+  "comments": [],
+  "profile": {
+    "name": "typicode"
+  }
+}

@@ -1,0 +1,29 @@
+
+<div class="jumbotron" style="background:linear-gradient(40deg, rgb(251, 176, 176), rgb(171, 171, 248));">
+  <div class="container for-about">
+  <h1>Welcome To Trestle-Foodie</h1>
+  <p>Here You can find Food Anytime and Anywhere </p>
+  <div class="form-inline" style="background-color:beige " >
+      <input type="text" class="from-control col-md-8"  [(ngModel)]="searchContent" placeholder="Location" name="" id="">
+      <button class="btn btn-lg btn-outline-dark col-md-2" (click)="getMusic()">Search</button>
+      </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="card_container">
+      <div *ngFor = "let movie of arrayMusic" class="card" style="width: 18rem;">
+          <img src="{{movie.restaurant.featured_image}}"class="card-img-top" alt="...">
+          <div class="card-body">
+          <h5 class="card-title">{{movie.restaurant.name}}</h5>
+           <p class="card-text">{{movie.restaurant.location.address}}</p>
+         <div class="row">
+          <button (click)="add(movie.restaurant)" class="btn btn-outline-success col-md-4">favourite</button>
+          
+          <button (click)="viewData(movie.restaurant.R.res_id)" class="btn btn-outline-primary col-md-4">Details</button>
+         </div>
+        </div>
+      </div>
+    
+    </div>
+  </div>
